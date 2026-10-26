@@ -30,23 +30,25 @@ llega un correo de "Activate form" a esa cuenta: hay que abrirlo y confirmar.
 Después de eso, cada inscripción llega como un correo con una tabla de datos.
 Para cambiar el correo: editar CORREO_DESTINO en assets/js/main.js.
 
-PUBLICARLO EN INTERNET (gratis)
--------------------------------
-Opción rápida - Netlify Drop:
-  1. Entrar a https://app.netlify.com/drop
-  2. Arrastrar la carpeta tusalud_web completa.
-  3. Crear cuenta para que el enlace no expire y cambiar el nombre del sitio
-     (ej. tusalud-mas.netlify.app).
-  Para actualizar: en el sitio de Netlify -> Deploys -> arrastrar la carpeta otra vez.
+PUBLICACIÓN (GitHub Pages)
+--------------------------
+Repositorio: https://github.com/sofiaocampo13/tusalud-web  (público)
 
-Opción GitHub Pages:
-  1. Crear un repositorio (ej. tusalud_web) y subir el CONTENIDO de esta carpeta.
-  2. Settings -> Pages -> Branch: main / root -> Save.
+Enlaces para compartir:
+  Sitio corporativo:   https://sofiaocampo13.github.io/tusalud-web/
+  Landing paciente:    https://sofiaocampo13.github.io/tusalud-web/paciente/
+  Landing cuidador:    https://sofiaocampo13.github.io/tusalud-web/cuidador/
 
-Enlaces para compartir (ejemplo con Netlify):
-  Sitio corporativo:   https://tusalud-mas.netlify.app/
-  Landing paciente:    https://tusalud-mas.netlify.app/paciente/
-  Landing cuidador:    https://tusalud-mas.netlify.app/cuidador/
+Para actualizar el sitio después de cambiar archivos (en esta carpeta):
+  git add -A
+  git commit -m "Describir el cambio"
+  git push
+GitHub vuelve a publicarlo solo en 1-2 minutos.
+También se puede editar un archivo directamente en github.com (ícono del lápiz)
+y guardar con "Commit changes".
+
+Para que otros integrantes del equipo puedan subir cambios:
+  Repositorio -> Settings -> Collaborators -> Add people.
 
 IMÁGENES (rediseño)
 -------------------
