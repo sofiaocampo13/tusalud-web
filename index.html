@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TuSalud+ | Tu bienestar, nuestra prioridad</title>
+  <meta name="description" content="TuSalud+ es una aplicación móvil colombiana que ayuda a pacientes y cuidadores a no olvidar ningún medicamento ni cita médica. Inscríbete en la prueba piloto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@400;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="barra-superior">
+    <div class="contenedor">
+      <span class="aviso-piloto">Prueba piloto abierta en Manizales · <a href="index.html#prueba-piloto">Inscríbase gratis</a></span>
+      <span class="datos">
+        <a href="tel:+573225951399">Tel. / WhatsApp: 322 595 1399</a>
+        <a class="correo" href="mailto:tusaludmas8@gmail.com">tusaludmas8@gmail.com</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="index.html">tusalud<span>+</span></a>
+      <button class="menu-boton" aria-controls="menu" aria-expanded="false">Menú</button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="preguntas.html">Preguntas</a>
+        <a href="experiencia.html">Experiencia</a>
+        <a href="prensa.html">Prensa</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="boton boton-azul" href="index.html#prueba-piloto">Prueba piloto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="contenedor hero-grid">
+        <div>
+          <span class="etiqueta">Prueba piloto abierta · Manizales</span>
+          <h1>Tu bienestar, nuestra prioridad</h1>
+          <p>TuSalud+ te ayuda a no olvidar ningún medicamento ni cita médica. Estamos buscando pacientes y cuidadores que quieran probar la aplicación antes de su lanzamiento y ayudarnos a mejorarla.</p>
+          <div class="botones">
+            <a class="boton boton-azul" href="paciente/index.html">Soy Paciente</a>
+            <a class="boton boton-borde-azul" href="cuidador/index.html">Soy Cuidador</a>
+          </div>
+          <p class="nota">Participar en la prueba piloto es gratis y sin compromiso. Por ahora, solo para celulares Android.</p>
+        </div>
+        <div class="hero-media">
+          <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-poster.jpg"
+                 aria-label="Una hija abraza sonriente a su papá en la cocina; sobre la mesa está su celular.">
+            <source src="assets/video/hero.webm" type="video/webm">
+            <source src="assets/video/hero.mp4" type="video/mp4">
+          </video>
+        <div class="aviso-flotante" aria-hidden="true">
+          <span class="punto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <div><strong>Papá tomó su Losartán</strong><span>Hoy, 8:02 a.m. · Confirmado en TuSalud+</span></div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTOR DE PERFIL -->
+    <section class="seccion" id="prueba-piloto">
+      <div class="contenedor">
+        <div class="centrado">
+          <span class="etiqueta etiqueta-azul">Únete a la prueba piloto</span>
+          <h2>¿Cómo vas a usar TuSalud+?</h2>
+          <p class="intro">Elige tu perfil y te contamos qué hace la aplicación por ti y cómo inscribirte para probarla.</p>
+        </div>
+        <div class="rejilla rejilla-2 espacio-arriba">
+          <a class="perfil" href="paciente/index.html">
+            <img class="perfil-foto" src="assets/img/fotos/perfil-paciente.jpg" alt="">
+            <div>
+            <h3>Soy Paciente</h3>
+            <p>Tomo varios medicamentos o tengo citas médicas frecuentes y quiero que el celular me avise a la hora exacta, con un aviso grande y tres botones claros.</p>
+            <span class="ir">Quiero probarla como paciente →</span>
+            </div>
+          </a>
+          <a class="perfil" href="cuidador/index.html">
+            <img class="perfil-foto" src="assets/img/fotos/perfil-cuidador.jpg" alt="">
+            <div>
+            <h3>Soy Cuidador</h3>
+            <p>Cuido a mi mamá, a mi papá o a otra persona y quiero organizar sus medicamentos y citas, y saber si cumplió sin tener que llamar a cada rato.</p>
+            <span class="ir">Quiero probarla como cuidador →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUÉ ES -->
+    <section class="seccion seccion-alt">
+      <div class="contenedor">
+        <h2>Una app, dos cuentas conectadas</h2>
+        <p class="intro">TuSalud+ conecta la cuenta del paciente con la de su cuidador mediante un código de cuatro caracteres. Cada uno hace lo suyo, y los dos están tranquilos.</p>
+        <div class="rejilla rejilla-3 pasos espacio-arriba">
+          <div class="tarjeta paso">
+            <h3>El cuidador registra</h3>
+            <p>Escribe el medicamento, la dosis, cada cuántas horas y por cuántos días. La app programa todas las tomas del tratamiento de una vez.</p>
+          </div>
+          <div class="tarjeta paso">
+            <h3>El paciente recibe el aviso</h3>
+            <p>A la hora exacta, el celular suena con el nombre del medicamento y la cantidad. Un toque en «Ya lo tomé» y listo.</p>
+          </div>
+          <div class="tarjeta paso">
+            <h3>El cuidador lo ve</h3>
+            <p>Cada toma queda marcada como cumplida, pospuesta u omitida. Sin llamadas de control, sin discusiones.</p>
+          </div>
+        </div>
+        <div class="fila-celulares">
+          <div class="celular-bloque">
+            <div class="celular">
+              <div class="pantalla">
+                <img class="captura" src="assets/img/app/alarma.jpg" alt="Captura de TuSalud+: alarma de medicamento con los botones Ya lo tomé, Posponer 10 minutos y No lo tomé" loading="lazy" width="738" height="1600">
+              </div>
+            </div>
+            <h3>Lo que ve el paciente</h3>
+            <p>Un aviso grande con el medicamento, la dosis y tres botones claros.</p>
+          </div>
+          <div class="celular-bloque">
+            <div class="celular">
+              <div class="pantalla">
+                <img class="captura" src="assets/img/app/inicio-cuidador.jpg" alt="Captura de TuSalud+: inicio del cuidador con el calendario de tomas, la ubicación del paciente y el botón para llamarlo" loading="lazy" width="738" height="1600">
+              </div>
+            </div>
+            <h3>Lo que ve el cuidador</h3>
+            <p>El calendario de tomas de su familiar y, con Premium, su ubicación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ PARTICIPAR -->
+    <section class="seccion">
+      <div class="contenedor dos-columnas">
+        <div>
+          <span class="etiqueta etiqueta-azul">Prueba piloto</span>
+          <h2>¿Por qué participar?</h2>
+          <p class="intro">TuSalud+ es un proyecto en desarrollo hecho en Manizales. Antes de lanzarla queremos que la usen familias reales y nos digan qué funciona y qué no.</p>
+        </div>
+        <ul class="lista-chulo">
+          <li><strong>Acceso anticipado y sin costo.</strong> Usas la aplicación antes que nadie, sin pagar nada y sin dar datos de tarjeta.</li>
+          <li><strong>Te acompañamos.</strong> Nuestro equipo te ayuda a instalarla, a crear la cuenta y a vincular a tu familiar. Al final, solo te pedimos contarnos tu experiencia en una encuesta o entrevista corta.</li>
+          <li><strong>Tu opinión cambia la app.</strong> Lo que nos cuentes se convierte en mejoras reales antes del lanzamiento.</li>
+          <li><strong>Tus datos, protegidos.</strong> No vendemos ni compartimos tu información. Cumplimos la Ley 1581 de 2012.</li>
+          <li><strong>Te puedes retirar cuando quieras.</strong> Sin permanencia ni letra pequeña.</li>
+          <li><strong>Para celulares Android.</strong> Por ahora, la prueba piloto funciona solo en Android.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LLAMADO FINAL -->
+    <section class="seccion seccion-azul centrado">
+      <div class="contenedor">
+        <h2>Sé de los primeros en probar TuSalud+</h2>
+        <p class="intro">Elige tu perfil e inscríbete. Te contactamos en menos de 24 horas hábiles.</p>
+        <div class="botones">
+          <a class="boton boton-primario" href="paciente/index.html">Soy Paciente</a>
+          <a class="boton boton-borde" href="cuidador/index.html">Soy Cuidador</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <a class="marca" href="index.html">tusalud<span>+</span></a>
+          <p>Tu bienestar, nuestra prioridad.</p>
+          <p>Cra. 9a # 19-03, Manizales, Colombia<br><a href="mailto:tusaludmas8@gmail.com">tusaludmas8@gmail.com</a><br><a href="tel:+573225951399">+57 322 5951399</a></p>
+        </div>
+        <div>
+          <h4>Sitio</h4>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="prensa.html">Prensa</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prueba piloto</h4>
+          <ul>
+            <li><a href="paciente/index.html">Soy Paciente</a></li>
+            <li><a href="cuidador/index.html">Soy Cuidador</a></li>
+          </ul>
+          <h4 class="espacio-arriba">Redes</h4>
+          <ul>
+            <li><a href="https://youtube.com/@tusaludmas-d1p" target="_blank" rel="noopener">YouTube: @tusaludmas-d1p</a></li>
+            <li><a href="https://www.instagram.com/tusaludmas8" target="_blank" rel="noopener">Instagram: @tusaludmas8</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pie-legal">
+        <p><a href="politicas.html#terminos">Términos y Condiciones</a> · <a href="politicas.html#datos">Política de Tratamiento de Datos Personales</a> · <a href="politicas.html#devoluciones">Devoluciones y Garantías</a></p>
+        <p>TuSalud+ es una herramienta de apoyo y organización. No reemplaza el diagnóstico, la prescripción ni el tratamiento de un profesional de la salud.</p>
+        <p>© <span data-anio>2026</span> TuSalud+. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

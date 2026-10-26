@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | TuSalud+</title>
+  <meta name="description" content="Escríbele al equipo de TuSalud+. Respondemos en menos de 24 horas hábiles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Merriweather:wght@400;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="barra-superior">
+    <div class="contenedor">
+      <span class="aviso-piloto">Prueba piloto abierta en Manizales · <a href="index.html#prueba-piloto">Inscríbase gratis</a></span>
+      <span class="datos">
+        <a href="tel:+573225951399">Tel. / WhatsApp: 322 595 1399</a>
+        <a class="correo" href="mailto:tusaludmas8@gmail.com">tusaludmas8@gmail.com</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="marca" href="index.html">tusalud<span>+</span></a>
+      <button class="menu-boton" aria-controls="menu" aria-expanded="false">Menú</button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="preguntas.html">Preguntas</a>
+        <a href="experiencia.html">Experiencia</a>
+        <a href="prensa.html">Prensa</a>
+        <a href="contacto.html" aria-current="page">Contacto</a>
+        <a class="boton boton-azul" href="index.html#prueba-piloto">Prueba piloto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="cabecera-pagina">
+      <div class="contenedor">
+        <h1>Contacto</h1>
+        <p>¿Tienes dudas sobre TuSalud+ o sobre la prueba piloto? Escríbenos y te respondemos en menos de 24 horas hábiles.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor dos-columnas">
+        <div>
+          <h2>Datos de contacto</h2>
+          <ul class="lista-chulo">
+            <li><strong>Correo electrónico:</strong> <a href="mailto:tusaludmas8@gmail.com">tusaludmas8@gmail.com</a></li>
+            <li><strong>Dirección:</strong> Cra. 9a # 19-03, Manizales, Colombia</li>
+            <li><strong>Línea telefónica / WhatsApp:</strong> <a href="tel:+573225951399">+57 322 5951399</a> · <a href="https://wa.me/573225951399" target="_blank" rel="noopener">Escribir por WhatsApp</a></li>
+            <li><strong>Horario de atención:</strong> lunes a viernes, 8:00 a.m. – 12:00 m. y 2:00 – 5:00 p.m.</li>
+            <li><strong>Chat en línea:</strong> <span class="proximamente">Próximamente</span></li>
+            <li><strong>Redes sociales:</strong> <a href="https://youtube.com/@tusaludmas-d1p" target="_blank" rel="noopener">YouTube @tusaludmas-d1p</a> · <a href="https://www.instagram.com/tusaludmas8" target="_blank" rel="noopener">Instagram @tusaludmas8</a> · otras redes próximamente</li>
+          </ul>
+          <div class="destacado espacio-arriba">
+            <p><strong>¿Quieres participar en la prueba piloto?</strong> Inscríbete desde la página de tu perfil: <a href="paciente/index.html">Soy Paciente</a> · <a href="cuidador/index.html">Soy Cuidador</a>.</p>
+          </div>
+        </div>
+
+        <div class="formulario">
+          <form data-formulario data-asunto="TuSalud+ · Nuevo mensaje de contacto">
+            <div class="campo">
+              <label for="c-nombre">Nombre <span class="ayuda">· ¿Cómo te llamas?</span></label>
+              <input id="c-nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="campo">
+              <label for="c-correo">Correo <span class="ayuda">· Ahí te respondemos</span></label>
+              <input id="c-correo" name="correo" type="email" autocomplete="email" required>
+            </div>
+            <div class="campo">
+              <label for="c-tel">Teléfono <span class="ayuda">· Opcional, solo si prefieres que te llamemos</span></label>
+              <input id="c-tel" name="telefono" type="tel" autocomplete="tel">
+            </div>
+            <div class="campo">
+              <fieldset>
+                <legend>¿Escribes como…?</legend>
+                <div class="opciones">
+                  <label><input type="radio" name="perfil" value="Paciente" required> Paciente</label>
+                  <label><input type="radio" name="perfil" value="Cuidador"> Cuidador</label>
+                  <label><input type="radio" name="perfil" value="Otro"> Otro</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="campo">
+              <label for="c-msg">Tu mensaje <span class="ayuda">· Cuéntanos qué necesitas saber</span></label>
+              <textarea id="c-msg" name="mensaje" required></textarea>
+            </div>
+            <label class="autorizacion">
+              <input type="checkbox" name="autoriza_datos" value="Sí" required>
+              <span>Acepto la <a href="politicas.html#datos" target="_blank">Política de Tratamiento de Datos Personales</a>. No compartimos mi información con terceros.</span>
+            </label>
+            <button class="boton boton-azul" type="submit">Enviar mensaje</button>
+            <p class="mensaje-error oculto">No pudimos enviar tu mensaje. Inténtalo de nuevo o escríbenos a tusaludmas8@gmail.com.</p>
+          </form>
+          <div class="mensaje-ok oculto" role="status">
+            <h3>¡Recibimos tu mensaje!</h3>
+            <p>Te escribiremos a tu correo en menos de 24 horas hábiles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <a class="marca" href="index.html">tusalud<span>+</span></a>
+          <p>Tu bienestar, nuestra prioridad.</p>
+          <p>Cra. 9a # 19-03, Manizales, Colombia<br><a href="mailto:tusaludmas8@gmail.com">tusaludmas8@gmail.com</a><br><a href="tel:+573225951399">+57 322 5951399</a></p>
+        </div>
+        <div>
+          <h4>Sitio</h4>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+            <li><a href="experiencia.html">Experiencia</a></li>
+            <li><a href="prensa.html">Prensa</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Prueba piloto</h4>
+          <ul>
+            <li><a href="paciente/index.html">Soy Paciente</a></li>
+            <li><a href="cuidador/index.html">Soy Cuidador</a></li>
+          </ul>
+          <h4 class="espacio-arriba">Redes</h4>
+          <ul>
+            <li><a href="https://youtube.com/@tusaludmas-d1p" target="_blank" rel="noopener">YouTube: @tusaludmas-d1p</a></li>
+            <li><a href="https://www.instagram.com/tusaludmas8" target="_blank" rel="noopener">Instagram: @tusaludmas8</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pie-legal">
+        <p><a href="politicas.html#terminos">Términos y Condiciones</a> · <a href="politicas.html#datos">Política de Tratamiento de Datos Personales</a> · <a href="politicas.html#devoluciones">Devoluciones y Garantías</a></p>
+        <p>TuSalud+ es una herramienta de apoyo y organización. No reemplaza el diagnóstico, la prescripción ni el tratamiento de un profesional de la salud.</p>
+        <p>© <span data-anio>2026</span> TuSalud+. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

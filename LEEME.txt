@@ -1,0 +1,72 @@
+TuSalud+ · Sitio web corporativo y landing pages (prueba piloto)
+================================================================
+
+ESTRUCTURA
+----------
+tusalud_web/
+  index.html          Inicio: elige perfil (Paciente / Cuidador)
+  nosotros.html       Quiénes somos, misión, visión, valores, historia
+  servicios.html      Funciones y planes
+  preguntas.html      Preguntas frecuentes (app + prueba piloto)
+  experiencia.html    Invitación a la prueba (testimonios: después del piloto)
+  prensa.html         Logo, colores, mapa del sitio, redes
+  contacto.html       Datos y formulario de contacto
+  politicas.html      Términos, datos personales, devoluciones
+  paciente/index.html Landing page PACIENTE (trato de "usted", letra grande)
+  cuidador/index.html Landing page CUIDADOR (trato de "tú")
+  assets/css/estilos.css   Estilos de todo el sitio (colores en :root)
+  assets/js/main.js        Menú en celular + envío de formularios
+  assets/img/logo.png      Logo
+
+VER EL SITIO EN EL COMPUTADOR
+-----------------------------
+Doble clic en index.html.
+
+FORMULARIOS
+-----------
+Llegan al correo tusaludmas8@gmail.com mediante FormSubmit (gratis).
+La PRIMERA vez que alguien envíe un formulario (con el sitio ya publicado),
+llega un correo de "Activate form" a esa cuenta: hay que abrirlo y confirmar.
+Después de eso, cada inscripción llega como un correo con una tabla de datos.
+Para cambiar el correo: editar CORREO_DESTINO en assets/js/main.js.
+
+PUBLICARLO EN INTERNET (gratis)
+-------------------------------
+Opción rápida - Netlify Drop:
+  1. Entrar a https://app.netlify.com/drop
+  2. Arrastrar la carpeta tusalud_web completa.
+  3. Crear cuenta para que el enlace no expire y cambiar el nombre del sitio
+     (ej. tusalud-mas.netlify.app).
+  Para actualizar: en el sitio de Netlify -> Deploys -> arrastrar la carpeta otra vez.
+
+Opción GitHub Pages:
+  1. Crear un repositorio (ej. tusalud_web) y subir el CONTENIDO de esta carpeta.
+  2. Settings -> Pages -> Branch: main / root -> Save.
+
+Enlaces para compartir (ejemplo con Netlify):
+  Sitio corporativo:   https://tusalud-mas.netlify.app/
+  Landing paciente:    https://tusalud-mas.netlify.app/paciente/
+  Landing cuidador:    https://tusalud-mas.netlify.app/cuidador/
+
+IMÁGENES (rediseño)
+-------------------
+Video del inicio: assets/video/hero.webm (+ hero.mp4 de respaldo y hero-poster.jpg).
+
+Fotos: guardarlas en assets/img/fotos/ con EXACTAMENTE estos nombres.
+YA ESTÁN (serie generada con IA a partir del video; ver prompts.txt en "Imágenes Web").
+  paciente-hero.jpg    Vertical 4:5 (1200x1500). Adulto mayor (70+) sonriente en su casa,
+                       con un celular Android en la mano mirando la pantalla. Luz cálida.
+  cuidador-hero.jpg    Vertical 4:5 (1200x1500). Hija/hijo de 35-50 años en el trabajo o
+                       en el bus, mirando el celular con alivio.
+  perfil-paciente.jpg  Cuadrada 1:1 (800x800). Rostro de adulto mayor sonriente con celular.
+                       Se recorta en círculo: rostro centrado.
+  perfil-cuidador.jpg  Cuadrada 1:1 (800x800). Rostro de cuidador(a) sonriente.
+                       Se recorta en círculo: rostro centrado.
+  ensenando.jpg        Cuadrada 1:1 (1000x1000). Cuidador(a) enseñándole a un adulto mayor
+                       a usar la app, sentados juntos. Se recorta en círculo.
+
+Capturas de la app (assets/img/app/): YA ESTÁN, tomadas de "Imágenes Web".
+Son copias con nombres, correos, teléfono y código de enlace pixelados (Ley 1581).
+Los originales en "Formación Empresarial III/Imágenes Web" no se modificaron.
+  alarma.jpg, inicio-paciente.jpg, inicio-cuidador.jpg,
+  registro-medicamento.jpg, agendar-cita.jpg, perfil-cuidador.jpg
