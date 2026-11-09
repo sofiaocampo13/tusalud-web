@@ -30,20 +30,29 @@ llega un correo de "Activate form" a esa cuenta: hay que abrirlo y confirmar.
 Después de eso, cada inscripción llega como un correo con una tabla de datos.
 Para cambiar el correo: editar CORREO_DESTINO en assets/js/main.js.
 
-PUBLICACIÓN (GitHub Pages)
---------------------------
+PUBLICACIÓN (Cloudflare Pages)
+------------------------------
 Repositorio: https://github.com/sofiaocampo13/tusalud-web  (público)
+Proyecto en Cloudflare Pages: tusalud
 
 Enlaces para compartir:
-  Sitio corporativo:   https://sofiaocampo13.github.io/tusalud-web/
-  Landing paciente:    https://sofiaocampo13.github.io/tusalud-web/paciente/
-  Landing cuidador:    https://sofiaocampo13.github.io/tusalud-web/cuidador/
+  Sitio corporativo:   https://tusalud.pages.dev/
+  Landing paciente:    https://tusalud.pages.dev/paciente/
+  Landing cuidador:    https://tusalud.pages.dev/cuidador/
 
 Para actualizar el sitio después de cambiar archivos (en esta carpeta):
   git add -A
   git commit -m "Describir el cambio"
   git push
-GitHub vuelve a publicarlo solo en 1-2 minutos.
+GitHub Actions (.github/workflows/deploy.yml) lo publica solo en Cloudflare
+en menos de 1 minuto. El avance se ve en la pestaña "Actions" del repositorio.
+Si se agrega un archivo o carpeta nueva en la raíz, hay que añadirla al paso
+"Preparar archivos del sitio" de ese workflow.
+
+El workflow usa dos secretos del repositorio (Settings -> Secrets and variables
+-> Actions): CLOUDFLARE_ACCOUNT_ID y CLOUDFLARE_API_TOKEN (permiso: Account ->
+Cloudflare Pages -> Edit). Si el token se pierde o vence, crear uno nuevo en
+dash.cloudflare.com/profile/api-tokens y reemplazar ese secreto.
 También se puede editar un archivo directamente en github.com (ícono del lápiz)
 y guardar con "Commit changes".
 
